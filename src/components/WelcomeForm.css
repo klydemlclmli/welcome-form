@@ -1,0 +1,130 @@
+*{
+  font-family: 'Lato';
+  color: white;
+}
+
+.nameForm, .title, form, .welcome, .welcome-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  flex-direction: row;
+  gap: 10px;
+  font-weight: 900 !important;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.boxed{
+  background: linear-gradient(72.09deg, #962523 0%, #9C2424 0.01%, #CE342D 100%);
+  border-radius: 17px;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.welcome{
+  gap: 20px;
+  margin: 10px;
+}
+
+.welcome-title, .title-2{
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  font-weight: 900;
+  font-size: 75px;
+}
+
+@media (max-width: 888px) {
+  .welcome-title{
+    flex-direction: column;
+  }
+}
+
+.nameForm{
+  background-color: #151515;
+  padding: 53px 57px;
+  gap: 10px;
+}
+
+.textfields{
+  position: relative;
+  margin: 5px;
+}
+
+.textfields input{
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background-color: rgba(255,255,255,0);
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+}
+
+.textfields span{
+  position: absolute;
+  left: 0;
+  padding: 11px 10px 10px 15px;
+  pointer-events: none;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.textfields input:valid ~ span,
+.textfields input:focus ~ span{
+  color: #962523;
+  transform: translateX(10px) translateY(-4.5px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background-color: #151515;
+  border-left: 1px solid #962523;
+  border-right: 1px solid #962523;
+  letter-spacing: 0.2em;
+}
+
+.textfields input:valid,
+.textfields input:focus{
+  border: 1px solid #962523;
+}
+
+.btn{
+  margin-top: 30px;
+  width: 77px;
+  height: 42px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.submit{
+  background: #962523;
+}
+
+.submit:hover{
+  border: 3px solid #962523;
+  background-color: rgba(255,255,255,0);
+  color: #962523;
+  transition: 0.2s;
+}
+
+.edit{
+  width: 52px;
+  height: 42px;
+  background: none;
+  border: 3px solid white;
+}
+
+.edit:hover{
+  color: black;
+  background-color: white;
+  transition: 0.2s;
+}
